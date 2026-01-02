@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Bebas_Neue } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { LenisScroll } from "@/components/LenisScroll"; // We will create this
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         <div className="noise-overlay" />
         <LenisScroll />
         {children}
+        <Analytics />
       </body>
     </html>
   );
