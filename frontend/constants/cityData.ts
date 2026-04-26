@@ -14,6 +14,7 @@ export interface DiningInfo {
     name: string;
     cuisine: string;
     vibe: string;
+    type?: string;
 }
 
 export interface HotelInfo {
