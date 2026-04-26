@@ -147,9 +147,9 @@ export default function PhotosPage() {
                         bannerVisible={false}
                         onVisibleChange={(visible) => {
                             if (visible) {
-                                window.lenis?.stop();
+                                (window as any).lenis?.stop();
                             } else {
-                                window.lenis?.start();
+                                (window as any).lenis?.start();
                             }
                         }}
                         overlayRender={({ index, onClose }) => {

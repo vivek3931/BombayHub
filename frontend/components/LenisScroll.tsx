@@ -9,7 +9,7 @@ export const LenisScroll = () => {
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
         });
 
-        window.lenis = lenis;
+        (window as any).lenis = lenis;
 
         function raf(time: number) {
             lenis.raf(time);
@@ -20,7 +20,7 @@ export const LenisScroll = () => {
 
         return () => {
             lenis.destroy();
-            window.lenis = undefined;
+            (window as any).lenis = undefined;
         };
     }, []);
 
