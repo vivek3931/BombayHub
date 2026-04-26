@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "dev": "npm run dev --workspace=frontend",
-    "build": "npm run build --workspace=frontend",
+    "build": "npm run build --workspace=frontend && mv frontend/.next ./.next && cp -r frontend/public ./public",
     "start": "npm run start --workspace=frontend"
   },
   "devDependencies": {
