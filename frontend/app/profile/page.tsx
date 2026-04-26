@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Navbar } from '@/components/Navbar';
-import { useAuth } from '@/context/AuthContext';
+import { useAuth } from '@/providers/AuthContext';
 import { User, Mail, Camera, Save, Edit2, Loader } from 'lucide-react';
 
 export default function ProfilePage() {

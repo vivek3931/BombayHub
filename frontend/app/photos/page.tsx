@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Navbar } from '@/components/Navbar';
 import { getPhotos } from '@/lib/api';
-import { useAuth } from '@/context/AuthContext';
+import { useAuth } from '@/providers/AuthContext';
 import Image from 'next/image';
 import { Loader, X, Share2, Download, Lock } from 'lucide-react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Navbar } from '@/components/Navbar';
 import { getJobs } from '@/lib/api';
-import { useAuth } from '@/context/AuthContext';
+import { useAuth } from '@/providers/AuthContext';
 import { Loader } from 'lucide-react';
 
 export default function JobsPage() {

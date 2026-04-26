@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
-import { useAuth } from '@/context/AuthContext';
+import { useAuth } from '@/providers/AuthContext';
 
 interface Job {
     id: string;

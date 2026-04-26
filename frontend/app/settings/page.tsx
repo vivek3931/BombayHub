@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Navbar } from '@/components/Navbar';
-import { useAuth } from '@/context/AuthContext';
+import { useAuth } from '@/providers/AuthContext';
 import { User, Bell, Moon, Sun, Shield, Info, ChevronRight, LogOut, Loader } from 'lucide-react';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';

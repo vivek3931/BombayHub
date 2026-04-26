@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useAuth } from '@/context/AuthContext';
+import { useAuth } from '@/providers/AuthContext';
 import { LayoutDashboard, Users, Briefcase, MapPin, Calendar, ImageIcon, Flag, ChevronLeft, ChevronRight, Menu, X, Globe } from 'lucide-react';
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {

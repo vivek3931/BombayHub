@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Navbar } from '@/components/Navbar';
-import { useAuth } from '@/context/AuthContext';
+import { useAuth } from '@/providers/AuthContext';
 
 export default function SubmitJob() {
     const { token, isAuthenticated, isLoading } = useAuth();

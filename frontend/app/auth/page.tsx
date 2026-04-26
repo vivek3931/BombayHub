@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Navbar } from '@/components/Navbar';
 import { ArrowRight, Loader } from 'lucide-react';
-import { useAuth } from '@/context/AuthContext';
+import { useAuth } from '@/providers/AuthContext';
 
 function AuthForm() {
     const router = useRouter();

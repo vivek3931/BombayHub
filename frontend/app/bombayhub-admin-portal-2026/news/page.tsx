@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useAuth } from '@/context/AuthContext';
+import { useAuth } from '@/providers/AuthContext';
 import { Plus, Trash2, ExternalLink, Loader2 } from 'lucide-react';
 
 interface NewsItem {

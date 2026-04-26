@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import { LocationProvider } from "@/components/LocationProvider";
-import { AuthProvider } from "@/context/AuthContext";
+import { AuthProvider } from "@/providers/AuthContext";
 import { LenisScroll } from "@/components/LenisScroll";
 import { ThemeProvider } from "@/components/ThemeProvider";
 

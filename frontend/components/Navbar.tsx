@@ -4,7 +4,7 @@ import { Zap, User, LogOut, Sun, Moon } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-import { useAuth } from '@/context/AuthContext';
+import { useAuth } from '@/providers/AuthContext';
 import { useTheme } from 'next-themes';
 
 export const Navbar = () => {
