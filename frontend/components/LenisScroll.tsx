@@ -2,12 +2,6 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 
-declare global {
-    interface Window {
-        lenis?: Lenis;
-    }
-}
-
 export const LenisScroll = () => {
     useEffect(() => {
         const lenis = new Lenis({
