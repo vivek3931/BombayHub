@@ -1,7 +1,7 @@
-import Lenis from 'lenis';
-
 declare global {
   interface Window {
-    lenis?: Lenis;
+    lenis?: import('lenis').default;
   }
 }
+
+export {};
